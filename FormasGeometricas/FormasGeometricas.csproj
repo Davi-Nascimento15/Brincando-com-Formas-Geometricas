@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CB4D852-30F9-48FB-B480-1E40502BC790}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FormasGeometricas</RootNamespace>
+    <AssemblyName>FormasGeometricas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Untitled-Diagram.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Jogador.cs" />
+    <Compile Include="Classes\Jogo.cs" />
+    <Compile Include="Frm_Carregando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Carregando.Designer.cs">
+      <DependentUpon>Frm_Carregando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Conclusao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Conclusao.Designer.cs">
+      <DependentUpon>Frm_Conclusao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Creditos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Creditos.Designer.cs">
+      <DependentUpon>Frm_Creditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Fase2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Fase2.Designer.cs">
+      <DependentUpon>Frm_Fase2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Fase3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Fase3.Designer.cs">
+      <DependentUpon>Frm_Fase3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Fase4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Fase4.Designer.cs">
+      <DependentUpon>Frm_Fase4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Fase5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Fase5.Designer.cs">
+      <DependentUpon>Frm_Fase5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Fase6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Fase6.Designer.cs">
+      <DependentUpon>Frm_Fase6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Inicio.Designer.cs">
+      <DependentUpon>Frm_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Insere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Insere.Designer.cs">
+      <DependentUpon>Frm_Insere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MensagemBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MensagemBox.Designer.cs">
+      <DependentUpon>Frm_MensagemBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Fase1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Fase1.Designer.cs">
+      <DependentUpon>Frm_Fase1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Resultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Resultados.Designer.cs">
+      <DependentUpon>Frm_Resultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_Carregando.resx">
+      <DependentUpon>Frm_Carregando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Conclusao.resx">
+      <DependentUpon>Frm_Conclusao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Creditos.resx">
+      <DependentUpon>Frm_Creditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Fase2.resx">
+      <DependentUpon>Frm_Fase2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Fase3.resx">
+      <DependentUpon>Frm_Fase3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Fase4.resx">
+      <DependentUpon>Frm_Fase4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Fase5.resx">
+      <DependentUpon>Frm_Fase5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Fase6.resx">
+      <DependentUpon>Frm_Fase6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Inicio.resx">
+      <DependentUpon>Frm_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Insere.resx">
+      <DependentUpon>Frm_Insere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MensagemBox.resx">
+      <DependentUpon>Frm_MensagemBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Fase1.resx">
+      <DependentUpon>Frm_Fase1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Resultados.resx">
+      <DependentUpon>Frm_Resultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuadradoBranco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrianguloBranco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuadradoColorido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Triangulo Colorido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CirculoBranco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CirculoColorido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ceu Fundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tremzinho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LocomotivaPT2Colorido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vagão.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TetoVagão.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Janela Vagão.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DetalhesBranco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RodasFumaça.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrianguloFrenteBranco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chaminé.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LocomotivaPT2Colorido1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DetalhesColorido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrianguloFrenteColorido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrianguloXamine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled Diagram %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrianguloFase3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrianguloFase3Colorido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RodaTrem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar_Menino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar_Menina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_boy_person_people_avatar_icon_159358.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-1968243_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaInicialFundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoInsere.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled Diagram.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoInsere1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo.ico" />
+    <None Include="Resources\Retangulo.png" />
+    <None Include="Resources\Retangulo1.png" />
+    <None Include="Resources\Reta.png" />
+    <None Include="Resources\Quadra.png" />
+    <Content Include="Untitled-Diagram.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
